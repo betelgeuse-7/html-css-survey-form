@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Complete our survey!</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Take this survey!</h1>
+        <h4>Give us information about your smart phone habits.</h4>
+        <form action="https://httpbin.org/post" method="POST">
+            <h3>Your name</h3>
+            <input type="text" id = 'name' name='name'>
+            <h3>Your age?</h3>
+            <span><input type="radio" name='age-range' value="18-24"> 18-24 </span>
+            <span><input type="radio" name='age-range' value="25-34"> 25-34 </span>
+            <span><input type="radio" name='age-range' value="35-45"> 35-45 </span>
+            <span><input type="radio" name='age-range' value="46+"> 46+ </span>
+
+            <h3>Gender</h3>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <h3>How many times per day do you check your phone?</h3>
+            <span><input type="radio" name='check-times-per-day' value="10-20 times"> 10-20 times </span>
+            <span><input type="radio" name='check-times-per-day' value="20-30 times"> 20-30 times </span>
+            <span><input type="radio" name='check-times-per-day' value="30-50 times"> 30-50 times </span>
+            <span><input type="radio" name='check-times-per-day' value="50+ times"> So many times (50+ times) </span>
+            
+            <h3>What are the most common reasons that prompt you to check your phone?</h3>
+            <span><input type="checkbox" value="boredom" name='reasons-to-check-your-phone'> Boredom</span>
+            <span><input type="checkbox" value="social-media" name='reasons-to-check-your-phone'> Social Media</span>
+            <span><input type="checkbox" value="texting" name='reasons-to-check-your-phone'> Texting</span>
+            <span><input type="checkbox" value="watching-videos" name='reasons-to-check-your-phone'> Watching videos</span>
+            <span><input type="checkbox" value="gaming" name='reasons-to-check-your-phone'> Gaming</span>
+            <span><input type="checkbox" value="research" name='reasons-to-check-your-phone'> Research</span>
+            <span><input type="checkbox" value="other" name='reasons-to-check-your-phone'> Other</span>
+            
+            <h3>Smartphone or friends/family?</h3>
+            <span><input type="radio" name='smartphone-over-socializing' value="5/5"> Smartphone </span>
+            <span><input type="radio" name='smartphone-over-socializing' value="4/5"> Smartpho </span>
+            <span><input type="radio" name='smartphone-over-socializing' value="3/5"> Smart </span>
+            <span><input type="radio" name='smartphone-over-socializing' value="2/5"> Smfami </span>
+            <span><input type="radio" name='smartphone-over-socializing' value="1/5"> Famil </span>
+            <span><input type="radio" name='smartphone-over-socializing' value="0/5"> Family/Friends</span>
+
+            <h3>If your phone screen time was significantly reduced, you would feel...</h3>
+            <span><input type="radio" name='feeling-after-reduced-screen-times' value="productive"> Productive </span>
+            <span><input type="radio" name='feeling-after-reduced-screen-times' value="happier"> Happier </span>
+            <span><input type="radio" name='feeling-after-reduced-screen-times' value="unhappy"> Unhappy </span>
+            <span><input type="radio" name='feeling-after-reduced-screen-times' value="mad"> Mad </span>
+            <span><input type="radio" name='feeling-after-reduced-screen-times' value="neutral"> Neutral </span>
+
+            <h3>How do you feel after you spend time on your phone?</h3>
+            <span><input type="radio" name='after-spending-time-on-phone' value="happy"> Happy </span>
+            <span><input type="radio" name='after-spending-time-on-phone' value="motivated"> Motivated </span>
+            <span><input type="radio" name='after-spending-time-on-phone' value="lazy"> Lazy </span>
+            <span><input type="radio" name='after-spending-time-on-phone' value="unhappy"> Unhappy (I feel like I wasted my time.) </span>
+
+            <h3>How does frequent phone use affect your academic performance?</h3>
+            <span><input type="radio" name='effect-on-academic-performance' value="performance-improved"> My performance improved. </span>
+            <span><input type="radio" name='effect-on-academic-performance' value="started-getting-bad-grades"> I started getting bad grades. </span>
+            <span><input type="radio" name='effect-on-academic-performance' value="started-procrastinating"> I procrastinate. </span>
+            <span><input type="radio" name='effect-on-academic-performance' value="no-effects"> No effects. </span>
+
+            <h3>Have you ever used your smartphone while driving a car?</h3>
+            <span><input type="radio" name="used-while-driving" value="yes"> Yes </span>
+            <span><input type="radio" name="used-while-driving" value="no"> No </span>
+
+            <input type="submit" value="Done">
+        </form>
+    </div>
+</body>
+</html>
